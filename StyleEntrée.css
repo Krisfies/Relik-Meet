@@ -1,0 +1,662 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    overflow-x: hidden;
+    display: block;
+    overflow-y: scroll;
+}
+
+#all
+{
+    display: block;
+}
+
+.arrow-bottom
+{
+    transform: rotate(270deg);
+    position:relative;
+    margin-top: 899px;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+polyline {
+    transition: all 250ms ease-in-out;
+  }
+
+.headtext 
+{
+    font-size: 32px;
+    margin-left: 55px;
+    margin-top: -44px;
+    font-style: italic;
+}
+
+header 
+{
+    top: 0%;
+    margin-top: -4px;
+    margin-left: -8px;
+    background-color: rgb(216, 197, 197);
+    height: 65px;
+    width:104%;
+    position: fixed;
+    z-index: 3;
+}
+
+#vid
+{
+    height: 100vh;
+    width: 130%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+.logo 
+{
+    margin-left: 10px;
+    z-index: 1;
+    margin-top: 14px;
+}
+
+svg
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.article1
+{
+    width:100%;
+    height: 25vh;
+    margin-left: -10px;
+}
+
+.article2
+{
+    background-color: rgb(250, 237, 237);
+    margin-top: 300px;
+    width: 103%;
+}
+
+.article3 
+{
+    margin-top: 13px;
+    background-color: rgb(250, 237, 237);
+    margin-left: -10px;
+    width: 108%;
+    flex-wrap: wrap;
+}
+
+#Argument1
+{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.content1
+{
+    display: flex;
+    margin-top: 1.8%;
+}
+
+.valeurs
+{
+    font-size: 40px !important;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+h3 
+{
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.trouvez
+{
+    padding-top: 160px;
+    text-align: center;
+}
+
+.retrouvez
+{
+    margin-top: 170px;
+    margin-left: 40px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+}
+
+.votre
+{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-top: 150px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20%;
+}
+
+.img1
+{
+    width: 540px;
+	height: 340px;
+    margin-left: 6%;
+}
+
+.img2
+{
+    z-index: 0;
+}
+
+.img3
+{
+}
+
+.femmes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(250, 237, 237);
+    width: 110%;
+}
+
+.allsignes 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.signe
+{
+    width:  200px;
+	height: 200px;
+}
+
+.imgbloc
+{
+    display:block;
+    text-align: center;
+}
+
+.signereligion
+{
+    margin-bottom: -140px;
+    z-index: 1;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: italic;
+}
+
+div.allsignes img:hover 
+{
+    transform: translateY(50px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(50px);
+    transition: transform .4s, z-index .2s; 
+}
+
+div.femmes h1::after,
+div.article2 h1::after,
+div.article3 h1::after
+{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+div.femmes h1:hover:after,
+div.article2 h1:hover:after,
+div.article3 h1:hover:after {
+    width: 100%;
+    background: rgb(255, 184, 184);
+  }
+
+  div.femmes h1::after,
+  div.article2 h1::after,
+  div.article3 h1::after
+{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+div.femmes h1:hover:after,
+div.article2 h1:hover:after,
+div.article3 h1:hover :after {
+    width: 100%;
+    background: rgb(255, 184, 184);
+  }
+
+.amour
+{
+    font-size: 70px;
+    margin-left: 30px;
+    transition: width .5s ease, background-color .5s ease;
+    font-family: 'Luxurious Script', cursive;
+    margin-top: 130px;
+}
+
+.paix
+{
+    font-size: 70px;
+    margin-left: 30px;
+    transition: width .5s ease, background-color .5s ease;
+    font-family: 'Luxurious Script', cursive;
+    text-align: center;
+    margin-top: 160px;
+}
+
+.religion 
+{
+    font-family: 'Luxurious Script', cursive;
+    font-size: 70px;
+    margin-left: 30px;
+    margin-top: 140px;
+    padding-left: 120px;
+    margin-right: 300px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.choisissez 
+{
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: italic;
+}
+
+.commencer
+{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    box-sizing: content-box;
+    color: black;
+}
+
+.button:hover 
+{
+    background-color:rgb(255, 219, 219);
+    border: 1px solid rgb(255, 219, 219);  
+}
+
+.button
+{
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(255, 184, 184);
+    border-radius: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgb(255, 184, 184);
+}
+
+footer
+{
+    background-color: rgb(22, 21, 21);
+    font-family: Rubik;
+    color: white;
+    height: 390px;
+    width: 103%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -4px;
+    padding-bottom: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+span
+{
+    color: white;
+    margin-left:5px;
+}
+
+.FOOTER-mail
+{
+    padding: 20px;
+    font-family: Rubik;
+    border:0px solid;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(46, 37, 37);
+    text-decoration: none;
+}
+
+.FOOTER-contact
+{
+    margin-left: 0px;
+}
+
+i
+{
+    margin-left: 20px;
+}
+
+.FOOTER-block
+{
+    display: block;
+}
+
+.FOOTER-block1
+{
+    display: block;
+    margin-left: 6rem;
+}
+
+.FOOTER-réseaux
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.FOOTER-blockréseaux
+{
+    margin-left: 10px;
+}
+
+.FOOTER-mail
+{
+    margin-left: -10px;
+}
+
+.logofooter
+{
+    margin-top: 180px;
+    width: 50px;
+    height: 40px;
+    margin-left: -50px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+svg:hover polyline
+{
+    stroke-width: 5;
+}
+
+svg:active polyline {
+    stroke-width: 10;
+    transition: all 100ms ease-in-out;
+  }
+
+
+@media only screen and (max-width: 800px){
+.trouvez
+{
+    margin-top: 140px;
+    margin-left: -60px;
+    font-size: 20px;
+}   
+.amour
+{
+    margin-left: -70px;
+}
+
+.img3 
+{
+    
+}
+
+.signe
+{
+    width:  140px;
+	height: 140px;
+}
+
+.choisissez 
+{
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.commencer
+{
+    margin-top: 80px;
+}
+
+footer
+    {
+        display: block;
+        text-align: center;
+        height: 740px;
+    }
+    
+    p
+    {
+        margin-top: -9px;
+    }
+
+    .logofooter
+    {
+        margin-top: 28px;
+        margin-left: 12px;
+    }
+
+    .FOOTER-block
+    {
+        margin-top: 26px;
+        margin-left: -5px;
+    }
+
+    .FOOTER-block1
+    {
+        margin-left: 30px;
+    }
+
+    .map
+    {
+        margin-left: -6%;
+    }
+    .FOOTER-mail
+    {
+        margin-left: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 1570px){
+.flex
+{
+    display: block;
+}
+
+.paix 
+{
+    margin-top: -5px;
+}
+
+.retrouvez 
+{
+    margin-top: -40px;
+    text-align: center;
+}
+
+.img2 
+{
+    margin-left: 7%;
+}
+
+.votre 
+{
+    margin-top: -40px;
+    margin-left: 20%;
+}
+
+.religion
+{
+    margin-left: 40%;
+}
+
+.img3
+    {
+        margin-left: 38%;
+    }
+
+    .signereligion 
+    {
+        margin-bottom: -140px;
+    }
+}
+
+  @media only screen and (max-width: 700px){
+
+.valeurs 
+{
+    margin-left: 100px;
+}
+
+.img1
+{
+    margin-left: 1px;
+}
+
+.img2 
+{
+    margin-top: 40px;
+}
+
+.img3
+{
+    margin-left: 10%;
+}
+
+.article2
+{
+    padding-top: 100px;
+    margin-left: -330px;
+    width: 175%;
+}
+
+.article3
+{
+    padding-top: 10px;
+}
+
+.trouvez 
+{
+    padding-top: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+svg
+{
+    margin-bottom: 50px;
+}
+
+.amour
+{
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+.retrouvez
+{
+    margin-left: 330px;
+}
+
+.paix
+{
+    margin-left: 320px;
+}
+
+.article2
+    {
+        padding-bottom: 40px;
+        height: 109%;
+    }
+
+}
+
+.trouvez
+    {
+        margin-top: -20px;
+    }
+
+@media only screen and (max-width: 1400px) {
+    
+.article2 
+{
+    margin-top: 400px;
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .article2
+    {
+        margin-top: 500px;
+        padding-bottom: 20px;
+    }
+
+    .signereligion 
+{
+    font-size: 10px;
+}
+
+    .article3 
+    {
+        margin-top: 1%;
+    }
+
+    .religion
+    {
+        margin-left: 10%;
+        margin-top: -1%;
+    }
+
+    .img2 
+    {
+        margin-left: 0%;
+    }
+
+    .signe 
+    {
+        margin-top: 27px;
+    }
+
+    div.allsignes img:hover 
+    {
+        transform: translateY(2px);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(50px);
+        transition: transform .4s, 
+    }
+}
+
+
+

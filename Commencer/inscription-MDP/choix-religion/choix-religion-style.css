@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+
+body 
+{
+    background-color: rgb(216, 197, 197);
+    flex-wrap: wrap;
+}
+
+img 
+{
+    width: 60%;
+}
+
+.what 
+{
+    font-family: 'Luxurious Script', cursive;
+    font-size:400%;
+    text-align: center;
+}
+
+.allreligions
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    margin-left: 12%;
+}
+
+.imgreligion 
+{
+    transition: transform .2s;
+    margin-bottom: -3px;
+    z-index: 2;
+}
+
+.imgreligion:hover 
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.allreligions:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+
+.cards 
+{
+    display: block;
+    margin-left: -80px;
+}
+
+.ombre 
+{
+    margin-left: -223px;
+    z-index: 1;
+}
+
+.nomreligion
+{
+    text-align: center;
+}
+
+.Bouddhisme  
+{
+    display: none;
+}
+.Christianisme
+{
+    display: none;
+}
+.Judaïsme   
+{
+    display: none;
+}  
+.Hindouisme  
+{
+    display: none;
+}
+.Islam  
+{
+    display: none;
+}

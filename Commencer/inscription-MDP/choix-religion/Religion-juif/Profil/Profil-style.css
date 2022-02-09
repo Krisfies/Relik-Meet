@@ -1,0 +1,235 @@
+body {
+    margin-left: 0px;
+    background-image: url("Images/fond.png");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(233, 193, 193);
+  font-family: 'Magra', sans-serif; 
+}
+
+#headtext {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#headtext a {
+  color: #09c372;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 1px;
+  height: calc(150vh - 50px);
+  background-color: rgb(184, 131, 140);
+  padding-right: 1px;
+  text-align: right;
+  transition: ease;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .card
+  {
+   
+  }
+}
+
+.card {
+    margin-top: 70px;
+    height: 37rem;
+    border-radius: 30px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(206, 57, 57);
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .card__name {
+    margin-top: 15px;
+    font-size: 1.5em;
+  }
+  
+  .card__image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .description {
+      display: block;
+      text-align: center;
+      margin-left: 46px;
+      width: 200px;
+  }
+  
+  
+  .border {
+    box-shadow: inset 0 0 0 4px #ffffff;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  
+  .border::before,
+.border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.border:hover {
+  color: #ffe593;
+}
+
+.border:hover::before,
+.border:hover::after {
+  border-color: #ffc9de;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.Edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin-top: 90px;
+  width: 13rem;
+}
+
+.Edit:focus {
+  outline: 2px dotted #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}
